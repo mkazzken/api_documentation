@@ -493,14 +493,23 @@
         .nav-btn.gradient:hover:not(:disabled)::after {
             opacity: 1;
         }
+
+        .nav__logo-text {
+        font-family: "Segoe UI", sans-serif;
+        font-weight: 700;
+        font-size: 22px;
+        text-transform: uppercase;
+        color: #003366; /* corporate dark blue */
+}
+
     </style>
 </head>
 
 <body>
     <header class="header" id="header">
         <nav class="nav nav-container">
-            <a href="https://sk.kz" class="nav__logo">
-                <span class="nav__logo-text">САМУРЫК КАЗЫНА</span>
+            <a href="#"class="nav__logo">
+                <span class="nav__logo-text">САМРУК КАЗЫНА</span>
             </a>
 
             <div class="nav__menu" id="nav-menu">
@@ -2075,8 +2084,10 @@
             const home = window.i18n?.t('breadcrumb.home') || 'Главная';
             const docs = window.i18n?.t('breadcrumb.docs') || 'Документация API';
 
-            let breadcrumbHTML = `<li class="breadcrumb-item"><a href="https://sk.kz/">${home}</a></li>`;
-            breadcrumbHTML += `<li class="breadcrumb-item"><a href="#" id="breadcrumb-docs">${docs}</a></li>`;
+            let breadcrumbHTML = `<li class="breadcrumb-item"><a href="#" class="breadcrumb-link">${home}</a></li>`;
+            breadcrumbHTML += `<li class="breadcrumb-item"><a href="#" class="breadcrumb-link">${docs}</a></li>`;
+
+            
 
             currentPath.forEach((part, index) => {
                 const isLast = index === currentPath.length - 1;
@@ -2097,14 +2108,15 @@
 
             breadcrumb.innerHTML = breadcrumbHTML;
 
-            // Add event listeners
-            const docsLink = document.getElementById('breadcrumb-docs');
-            if (docsLink) {
-                docsLink.addEventListener('click', (event) => {
-                    event.preventDefault();
-                    showFolders([], true);
-                });
-            }
+            // Add event listeners for home and docs links
+            document.querySelectorAll('.breadcrumb-link').forEach(link => {
+                if (!link.hasAttribute('data-path-index')) {
+                    link.addEventListener('click', (event) => {
+                        event.preventDefault();
+                        showFolders([], true);
+                    });
+                }
+            });
 
             document.querySelectorAll('[data-path-index]').forEach(link => {
                 link.addEventListener('click', (event) => {
