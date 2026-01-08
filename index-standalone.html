@@ -948,22 +948,82 @@
 
                 },
                 "Справочник": {
-                    "table": [
+                   "table": [
+                        {
+                            "field": "/bic/zportfom",
+                            "description": "ID компании",
+                            
+                        },
+                        {
+                            "field": "txtlg",
+                            "description": "Название компании",
+                            
+                        }
+
+                        
+                    ],
+
+                    
+                    /*"table": [
                         {
                             "field": "",
                             "description": "",
                             "value_example": "",
                             "notes": ""
+                            
+                            
                         },
-                    ],
+                        
+                    ], 
+                    */
+                        
+                    
                     "table_link": [
                         {
                             "link1": "www.example.com",
-                            "link2": "www.example.com",
-                            "description": "В форме ежеквартальное исполнение ДДС данные заносятся на Оценку. Отправка осуществляется методом POST."
+                            "link2": "http://qasbpcas.intranet.s-k.kz:8443/zrest_dt_api/GET_ZPORTFCOM?sap-client=200",
+                            "description": "Выгрузка списка всех компании. Выгрузка осуществляется методом GET."
+                        }
+                    ],
+
+                    "table1": [
+                        {
+                            "field": "REPORT",
+                            "description": "Вид отчета",
+                            "value_example": "BP3_DZO - при выборе этого вида, нужно обязательно указывать ZPORTFCOM.<br>BP3_P_PK - при выборе этого вида, нужно обязательно указывать ZPORTFCOM.<br>BP3_Q_PK - при выборе этого вида, нужно обязательно указывать ZPORTFCOM.<br>BP4_DZO - при выборе этого вида, нужно обязательно указывать ZPORTFCOM.<br>BP4_P_PK - при выборе этого вида, нужно обязательно указывать ZPORTFCOM.<br>BP4_Q_PK - при выборе этого вида, нужно обязательно указывать ZPORTFCOM.<br>BP6_DZO - при выборе этого вида, нужно обязательно указывать ZPORTFCOM и ZBPPER.<br>BP6_M_PK - при выборе этого вида, нужно обязательно указывать ZPORTFCOM и ZBPPER.<br>BP6_P_PK - при выборе этого вида, нужно обязательно указывать ZPORTFCOM и ZBPPER.<br>BP6_Q_PK - при выборе этого вида, нужно обязательно указывать ZPORTFCOM и ZBPPER.",
+                            "notes": "BP3_DZO"
+                        },
+                        {
+                            "field": "ZPORTFCOM",
+                            "description": "ID портфеля компаний",
+                            "value_example": "DO0003",
+                            "notes": "Портфельные компании начинаются с DO, Дочерние компании с С"
+                        },
+
+                        {
+                            "field": "ZBPPER",
+                            "description": "Плановая пятилетка",
+                            "value_example": "Заполняется по логике: гггг-(гггг+4)",
+                            "notes": "2025-2029"
+                        },
+                    ],
+                    "table1_link": [
+                        {
+                            "link1": "www.example.com",
+                            "link2": "http://qasbpcas.intranet.s-k.kz:8443/zrest_dt_api/GET_ZBPACCT?sap-client=200",
+                            "description": "Выгрузка списка всех статьи-факторов. Выгрузка осуществляется методом GET."
+                        }
+                    ],
+                    "table1_link2": [
+                        {
+                            "link1": "www.example.com",
+                            "link2": "http://qasbpcas.intranet.s-k.kz:8443/zrest_dt_api/GET_ZBPACCT?sap-client=200",
+                            "description": "Выгрузка списка всех статьи-факторов. Выгрузка осуществляется методом GET."
                         }
                     ]
                 },
+
+                
                 "BP6_TFR": {
                     "bp6-m-pk": [
                         {
@@ -1819,7 +1879,8 @@
                         "bp6-p-pk": "Прогнозный отчет о прибылях и убытках и по производственным показателям для ПК (BP6-P-PK)",
                         "bp6-q-pk": "Ежеквартальное исполнение отчета о прибылях и убытках и по производственным показателям для ПК (BP6-Q-PK)",
                         "bp6-dzo": "Ежемесячное исполнение отчета о прибылях и убытках и по производственным показателям для ДЗО (BP6-DZO)",
-                        "table": "Справочник"
+                        "table": "Выгрузка ID компании", 
+                        "table1": "Выгрузка статьи фактора"
                     },
 
                     "footer": {
@@ -2008,7 +2069,8 @@
                 'bp6-dzo'
             ],
             'Справочник': [
-                'table'
+                'table', 
+                'table1'
             ]
         };
 
