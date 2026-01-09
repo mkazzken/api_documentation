@@ -571,6 +571,11 @@
             <div id="tableContainer" class="d-none">
                 <!-- Tables will be displayed here -->
             </div>
+
+            <!-- Extra Table Display Area (for table1_table) -->
+            <div id="extraTableContainer" class="d-none">
+                <!-- Additional tables will be displayed here -->
+            </div>
         </div>
     </main>
 
@@ -671,7 +676,7 @@
 
                     "bp3-dzo_link": [
                         {
-                            "link1": "www.example.com",
+                            "link1": "https://qasbpcas.intranet.s-k.kz",
                             "link2": "http://qasbpcas.intranet.s-k.kz:8443/zrest_dt_api/BP3_DZO?sap-client=200",
                             "description": "В форме прогнозный Баланс для ДЗО данные заносятся на Факт, Оценку и План. Отправка осуществляется методом POST."
                         }
@@ -723,7 +728,7 @@
 
                     "bp3-p-pk_link": [
                         {
-                            "link1": "www.example.com",
+                            "link1": "https://qasbpcas.intranet.s-k.kz",
                             "link2": "http://qasbpcas.intranet.s-k.kz:8443/zrest_dt_api/BP3_P_PK?sap-client=200",
                             "description": "В форме прогнозный Баланс данные заносятся на Оценку, План в разбивке по кварталам и Прогноз +4 года. Отправка осуществляется методом POST."
                         }
@@ -769,7 +774,7 @@
                     ],
                     "bp3-q-pk_link": [
                         {
-                            "link1": "www.example.com",
+                            "link1": "https://qasbpcas.intranet.s-k.kz",
                             "link2": "http://qasbpcas.intranet.s-k.kz:8443/zrest_dt_api/BP3_Q_PK?sap-client=200",
                             "description": "В форме Баланс исполнение данные заносятся только на Оценку. Факт подгружается из витрины КФО. Отправка осуществляется методом POST."
                         }
@@ -842,7 +847,7 @@
 
                     "bp4-dzo_link": [
                         {
-                            "link1": "www.example.com",
+                            "link1": "https://qasbpcas.intranet.s-k.kz",
                             "link2": "http://qasbpcas.intranet.s-k.kz:8443/zrest_dt_api/BP4_DZO?sap-client=200",
                             "description": "В форме ДДС для ДЗО данные заносятся на Факт, Оценку и План. Отправка осуществляется методом POST."
                         }
@@ -893,7 +898,7 @@
                     ],
                     "bp4-p-pk_link": [
                         {
-                            "link1": "www.example.com",
+                            "link1": "https://qasbpcas.intranet.s-k.kz",
                             "link2": "http://qasbpcas.intranet.s-k.kz:8443/zrest_dt_api/BP4_P_PK?sap-client=200",
                             "description": "В форме прогнозный ДДС данные заносятся на Оценку, План в разбивке по кварталам и Прогноз +4 года. Отправка осуществляется методом POST."
                         }
@@ -940,7 +945,7 @@
 
                     "bp4-q-pk_link": [
                         {
-                            "link1": "www.example.com",
+                            "link1": "https://qasbpcas.intranet.s-k.kz",
                             "link2": "http://qasbpcas.intranet.s-k.kz:8443/zrest_dt_api/BP4_Q_PK?sap-client=200",
                             "description": "В форме ежеквартальное исполнение ДДС данные заносятся на Оценку. Отправка осуществляется методом POST."
                         }
@@ -980,7 +985,7 @@
                     
                     "table_link": [
                         {
-                            "link1": "www.example.com",
+                            "link1": "https://qasbpcas.intranet.s-k.kz",
                             "link2": "http://qasbpcas.intranet.s-k.kz:8443/zrest_dt_api/GET_ZPORTFCOM?sap-client=200",
                             "description": "Выгрузка списка всех компании. Выгрузка осуществляется методом GET."
                         }
@@ -1009,17 +1014,35 @@
                     ],
                     "table1_link": [
                         {
-                            "link1": "www.example.com",
-                            "link2": "http://qasbpcas.intranet.s-k.kz:8443/zrest_dt_api/GET_ZBPACCT?sap-client=200",
+                            "link1": "https://prdbpcas.intranet.s-k.kz:8443/zrest_dt_api/GET_ZPORTFCOM?sap-client=200",
+                            "link2": "https://prdbpc-app.intranet.s-k.kz:8443/zrest_dt_api/GET_ZPORTFCOM?sap-client=200",
+                            "link3": " https://qasbpcas.intranet.s-k.kz:8443/zrest_dt_api/GET_ZBPTFC?sap-client=200",
                             "description": "Выгрузка списка всех статьи-факторов. Выгрузка осуществляется методом GET."
                         }
                     ],
-                    "table1_link2": [
+
+                    "table1_table": [
+                       {
+                            "field": "REPORT",
+                            "description": "Вид отчета",
+                            "value_example": "BP3_DZO - при выборе этого вида, нужно обязательно указывать ZPORTFCOM.<br>BP3_P_PK - при выборе этого вида, нужно обязательно указывать ZPORTFCOM.<br>BP3_Q_PK - при выборе этого вида, нужно обязательно указывать ZPORTFCOM.<br>BP4_DZO - при выборе этого вида, нужно обязательно указывать ZPORTFCOM.<br>BP4_P_PK - при выборе этого вида, нужно обязательно указывать ZPORTFCOM.<br>BP4_Q_PK - при выборе этого вида, нужно обязательно указывать ZPORTFCOM.<br>BP6_DZO - при выборе этого вида, нужно обязательно указывать ZPORTFCOM и ZBPPER.<br>BP6_M_PK - при выборе этого вида, нужно обязательно указывать ZPORTFCOM и ZBPPER.<br>BP6_P_PK - при выборе этого вида, нужно обязательно указывать ZPORTFCOM и ZBPPER.<br>BP6_Q_PK - при выборе этого вида, нужно обязательно указывать ZPORTFCOM и ZBPPER.",
+                            "notes": "BP3_DZO"
+                        },
                         {
-                            "link1": "www.example.com",
-                            "link2": "http://qasbpcas.intranet.s-k.kz:8443/zrest_dt_api/GET_ZBPACCT?sap-client=200",
-                            "description": "Выгрузка списка всех статьи-факторов. Выгрузка осуществляется методом GET."
-                        }
+                            "field": "ZPORTFCOM",
+                            "description": "ID портфеля компаний",
+                            "value_example": "DO0003",
+                            "notes": "Портфельные компании начинаются с DO, Дочерние компании с С"
+                        },
+
+                        {
+                            "field": "ZBPPER",
+                            "description": "Плановая пятилетка",
+                            "value_example": "Заполняется по логике: гггг-(гггг+4)",
+                            "notes": "2025-2029"
+                        },
+
+                        
                     ]
                 },
 
@@ -1072,7 +1095,7 @@
 
                     "bp6-m-pk_link": [
                         {
-                            "link1": "www.example.com",
+                            "link1": "https://qasbpcas.intranet.s-k.kz",
                             "link2": "http://qasbpcas.intranet.s-k.kz:8443/zrest_dt_api/BP6_M_DZO?sap-client=200",
                             "description": "В форме ТФР исполнение данные заносятся на Оценку и Факт за период. Отправка осуществляется методом POST."
                         }
@@ -1125,7 +1148,7 @@
 
                     "bp6-p-pk_link": [
                         {
-                            "link1": "www.example.com",
+                            "link1": "https://qasbpcas.intranet.s-k.kz",
                             "link2": "http://qasbpcas.intranet.s-k.kz:8443/zrest_dt_api/BP6_P_PK?sap-client=200",
                             "description": "В форме прогнозный Баланс данные заносятся на Оценку, План в разбивке по кварталам и Прогноз +4 года. Отправка осуществляется методом POST."
                         }
@@ -1178,7 +1201,7 @@
 
                     "bp6-q-pk_link": [
                         {
-                            "link1": "www.example.com",
+                            "link1": "https://qasbpcas.intranet.s-k.kz",
                             "link2": "http://qasbpcas.intranet.s-k.kz:8443/zrest_dt_api/BP6_Q_PK?sap-client=200",
                             "description": "В форме ТФР исполнение данные заносятся на Оценку и Факт за период. Отправка осуществляется методом POST."
                         }
@@ -1238,7 +1261,7 @@
                     ],
                     "bp6-dzo_link": [
                         {
-                            "link1": "www.example.com",
+                            "link1": "https://qasbpcas.intranet.s-k.kz",
                             "link2": "http://qasbpcas.intranet.s-k.kz:8443/zrest_dt_api/BP6_DZO?sap-client=200",
                             "description": "В форме ТФР ежемесячное исполнение данные заносятся на Оценку, Факт и План за период. Отправка осуществляется методом POST."
                         }
@@ -1306,7 +1329,7 @@
                     ],
                     "bp3-dzo_link": [
                         {
-                            "link1": "www.example.com",
+                            "link1": "https://qasbpcas.intranet.s-k.kz",
                             "link2": "http://qasbpcas.intranet.s-k.kz:8443/zrest_dt_api/BP3_DZO?sap-client=200",
                             "description": "ДЗО үшін болжамды баланс формасында Факт, Бағалау және Жоспар бойынша деректер енгізіледі. Жіберу POST әдісімен орындалады."
                         }
@@ -1357,7 +1380,7 @@
                     ],
                     "bp3-p-pk_link": [
                         {
-                            "link1": "www.example.com",
+                            "link1": "https://qasbpcas.intranet.s-k.kz",
                             "link2": "http://qasbpcas.intranet.s-k.kz:8443/zrest_dt_api/BP3_P_PK?sap-client=200",
                             "description": "Болжамды баланс формасында Бағалау, тоқсандар бойынша бөлінген Жоспар және +4 жылға Болжам бойынша деректер енгізіледі. Жіберу POST әдісімен орындалады."
                         }
@@ -1402,7 +1425,7 @@
                     ],
                     "bp3-q-pk_link": [
                         {
-                            "link1": "www.example.com",
+                            "link1": "https://qasbpcas.intranet.s-k.kz",
                             "link2": "http://qasbpcas.intranet.s-k.kz:8443/zrest_dt_api/BP3_Q_PK?sap-client=200",
                             "description": "Баланс орындау формасында тек Бағалау бойынша деректер енгізіледі. Факт КФО витринасынан жүктеледі. Жіберу POST әдісімен орындалады."
                         }
@@ -1473,7 +1496,7 @@
                     ],
                     "bp4-dzo_link": [
                         {
-                            "link1": "www.example.com",
+                            "link1": "https://qasbpcas.intranet.s-k.kz",
                             "link2": "http://qasbpcas.intranet.s-k.kz:8443/zrest_dt_api/BP4_DZO?sap-client=200",
                             "description": "ДЗО үшін ААҚ формасында Факт, Бағалау және Жоспар бойынша деректер енгізіледі. Жіберу POST әдісімен орындалады."
                         }
@@ -1524,7 +1547,7 @@
                     ],
                     "bp4-p-pk_link": [
                         {
-                            "link1": "www.example.com",
+                            "link1": "https://qasbpcas.intranet.s-k.kz",
                             "link2": "http://qasbpcas.intranet.s-k.kz:8443/zrest_dt_api/BP4_P_PK?sap-client=200",
                             "description": "Болжамды ААҚ формасында Бағалау, тоқсандар бойынша бөлінген Жоспар және +4 жылға Болжам бойынша деректер енгізіледі. Жіберу POST әдісімен орындалады."
                         }
@@ -1569,7 +1592,7 @@
                     ],
                     "bp4-q-pk_link": [
                         {
-                            "link1": "www.example.com",
+                            "link1": "https://qasbpcas.intranet.s-k.kz",
                             "link2": "http://qasbpcas.intranet.s-k.kz:8443/zrest_dt_api/BP4_Q_PK?sap-client=200",
                             "description": "Шеңберлік ААҚ орындау формасында Бағалау бойынша деректер енгізіледі. Жіберу POST әдісімен орындалады."
                         }
@@ -1586,8 +1609,8 @@
                     ],
                     "table_link": [
                         {
-                            "link1": "www.example.com",
-                            "link2": "www.example.com",
+                            "link1": "https://qasbpcas.intranet.s-k.kz",
+                            "link2": "https://qasbpcas.intranet.s-k.kz",
                             "description": "Шеңберлік ААҚ орындау формасында Бағалау бойынша деректер енгізіледі. Жіберу POST әдісімен орындалады."
                         }
                     ]
@@ -1639,7 +1662,7 @@
                     ],
                     "bp6-m-pk_link": [
                         {
-                            "link1": "www.example.com",
+                            "link1": "https://qasbpcas.intranet.s-k.kz",
                             "link2": "http://qasbpcas.intranet.s-k.kz:8443/zrest_dt_api/BP6_M_DZO?sap-client=200",
                             "description": "ТФР орындау формасында кезең бойынша Бағалау және Факт бойынша деректер енгізіледі. Жіберу POST әдісімен орындалады."
                         }
@@ -1690,7 +1713,7 @@
                     ],
                     "bp6-p-pk_link": [
                         {
-                            "link1": "www.example.com",
+                            "link1": "https://qasbpcas.intranet.s-k.kz",
                             "link2": "http://qasbpcas.intranet.s-k.kz:8443/zrest_dt_api/BP6_P_PK?sap-client=200",
                             "description": "Болжамды баланс формасында Бағалау, тоқсандар бойынша бөлінген Жоспар және +4 жылға Болжам бойынша деректер енгізіледі. Жіберу POST әдісімен орындалады."
                         }
@@ -1741,7 +1764,7 @@
                     ],
                     "bp6-q-pk_link": [
                         {
-                            "link1": "www.example.com",
+                            "link1": "https://qasbpcas.intranet.s-k.kz",
                             "link2": "http://qasbpcas.intranet.s-k.kz:8443/zrest_dt_api/BP6_Q_PK?sap-client=200",
                             "description": "ТФР орындау формасында кезең бойынша Бағалау және Факт бойынша деректер енгізіледі. Жіберу POST әдісімен орындалады."
                         }
@@ -1798,7 +1821,7 @@
                     ],
                     "bp6-dzo_link": [
                         {
-                            "link1": "www.example.com",
+                            "link1": "https://qasbpcas.intranet.s-k.kz",
                             "link2": "http://qasbpcas.intranet.s-k.kz:8443/zrest_dt_api/BP6_DZO?sap-client=200",
                             "description": "ТФР айлық орындау формасында кезең бойынша Бағалау, Факт және Жоспар бойынша деректер енгізіледі. Жіберу POST әдісімен орындалады."
                         }
@@ -2224,64 +2247,170 @@
                     return;
                 }
 
-                const linkData = window.EMBEDDED_DATA?.[lang]?.[mainFolder]?.[fileName + '_link'];
-
-                // Если данных нет - скрываем контейнер
-                if (!linkData || !Array.isArray(linkData) || linkData.length === 0) {
-                    scanLinksContainer.classList.add('d-none');
-                    return;
-                }
-
-                // Берем первый элемент массива (должен быть объект с link1 и link2)
-                const links = linkData[0];
-                if (!links || !links.link1 || !links.link2) {
-                    scanLinksContainer.classList.add('d-none');
-                    return;
-                }
-
-                // Показываем контейнер
-                scanLinksContainer.classList.remove('d-none');
-
-                // Формируем URL (добавляем https:// если его нет)
-                const formatUrl = (url) => {
-                    if (!url) return '#';
-                    if (url.startsWith('http://') || url.startsWith('https://')) {
-                        return url;
+                // Function to render a single links table
+                const renderLinksTable = (linkData, container) => {
+                    if (!linkData || !Array.isArray(linkData) || linkData.length === 0) {
+                        return false;
                     }
-                    return 'https://' + url;
+
+                    // Берем первый элемент массива
+                    const links = linkData[0];
+                    if (!links) {
+                        return false;
+                    }
+
+                    // Формируем URL (добавляем https:// если его нет)
+                    const formatUrl = (url) => {
+                        if (!url) return '#';
+                        if (url.startsWith('http://') || url.startsWith('https://')) {
+                            return url;
+                        }
+                        return 'https://' + url;
+                    };
+
+                    // Извлекаем все ссылки (link1, link2, link3, ...)
+                    const linkKeys = Object.keys(links)
+                        .filter(key => key.startsWith('link'))
+                        .sort((a, b) => {
+                            // Сортируем по номеру: link1, link2, link3, ...
+                            const numA = parseInt(a.replace('link', ''));
+                            const numB = parseInt(b.replace('link', ''));
+                            return numA - numB;
+                        });
+
+                    // Если нет ни одной ссылки - выходим
+                    if (linkKeys.length === 0) {
+                        return false;
+                    }
+
+                    const descr = links.description || '';
+                    const linkLabels = ['Продуктив', 'Продуктив (BW4)', 'Тест'];
+
+                    // Генерируем строки таблицы для каждой ссылки
+                    let linkRows = '';
+                    linkKeys.forEach((key, index) => {
+                        const url = links[key];
+                        const formattedUrl = formatUrl(url);
+                        const label = linkLabels[index] || `Ссылка ${index + 1}`;
+                        linkRows += `
+                                            <tr>
+                                                <td>${label}</td>
+                                                <td><a href="${formattedUrl}" target="_blank" rel="noopener noreferrer">${url}</a></td>
+                                            </tr>
+                        `;
+                    });
+
+                    // Рендерим таблицу со ссылками
+                    container.innerHTML += `
+                        <div class="card mb-3">
+                            <div class="card-body">
+                                <div class="table-responsive">
+                                    <table class="table table-striped table-bordered table-hover">
+                                        <thead>
+                                        </thead>
+                                        <tbody>
+                                            ${linkRows}
+                                            <tr>
+                                                <td>Описание</td>
+                                                <td>${descr}</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    `;
+                    return true;
                 };
 
-                const prodUrl = formatUrl(links.link1);
-                const testUrl = formatUrl(links.link2);
-                const descr = links.description || '';
+                const renderDataTable = (tableData, container, title) => {
+                    if (!tableData || !Array.isArray(tableData) || tableData.length === 0) return false;
 
-                // Рендерим таблицу со ссылками
-                scanLinksContainer.innerHTML = `
-                    <div class="card mb-3">
+                    const fieldHeader = window.i18n?.t('tableHeaders.field') || 'ID Поля';
+                    const descHeader = window.i18n?.t('tableHeaders.description') || 'Название поля';
+
+                    const card = document.createElement('div');
+                    card.className = 'card mb-4';
+
+                    card.innerHTML = `
+                        <div class="card-header">
+                            <h3 class="mb-0">${title}</h3>
+                        </div>
                         <div class="card-body">
                             <div class="table-responsive">
                                 <table class="table table-striped table-bordered table-hover">
                                     <thead>
+                                        <tr>
+                                            <th>${fieldHeader}</th>
+                                            <th>${descHeader}</th>
+                                        </tr>
                                     </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>Прод</td>
-                                            <td><a href="${prodUrl}" target="_blank" rel="noopener noreferrer">${links.link1}</a></td>
-                                        </tr>
-                                        <tr>
-                                            <td>Тест</td>
-                                            <td><a href="${testUrl}" target="_blank" rel="noopener noreferrer">${links.link2}</a></td>
-                                        </tr>
-                                        <tr>
-                                            <td>Описание</td>
-                                            <td>${descr}</td>
-                                        </tr>
-                                    </tbody>
+                                    <tbody></tbody>
                                 </table>
                             </div>
                         </div>
-                    </div>
-                `;
+                    `;
+
+                    const tbody = card.querySelector('tbody');
+
+                    tableData.forEach(item => {
+                        const tr = document.createElement('tr');
+                        tr.innerHTML = `
+                            <td>${item.field || ''}</td>
+                            <td>${item.description || ''}</td>
+                        `;
+                        tbody.appendChild(tr);
+                    });
+
+                    container.appendChild(card);
+                    return true;
+                };
+
+
+                // Clear container
+                scanLinksContainer.innerHTML = '';
+
+                let hasLinks = false;
+
+                if (fileName === 'table1') {
+                    // For table1, load table1_link as links table
+                    const linkData1 = window.EMBEDDED_DATA?.[lang]?.[mainFolder]?.['table1_link'];
+                    if (renderLinksTable(linkData1, scanLinksContainer)) {
+                        hasLinks = true;
+                    }
+
+                    // For table1, load table1_table as extra data table
+                    const extraTableContainer = document.getElementById('extraTableContainer');
+                    if (extraTableContainer) {
+                        extraTableContainer.innerHTML = '';
+                        const tableData = window.EMBEDDED_DATA?.[lang]?.[mainFolder]?.['table1_table'];
+                        if (tableData && Array.isArray(tableData) && tableData.length > 0) {
+                            renderDataTable(tableData, extraTableContainer, 'ВЫВОД');
+                            extraTableContainer.classList.remove('d-none');
+                        } else {
+                            extraTableContainer.classList.add('d-none');
+                        }
+                    }
+                } else {
+                    // For other files, load as before
+                    const linkData = window.EMBEDDED_DATA?.[lang]?.[mainFolder]?.[fileName + '_link'];
+                    if (renderLinksTable(linkData, scanLinksContainer)) {
+                        hasLinks = true;
+                    }
+
+                    // Hide extra table container for non-table1 files
+                    const extraTableContainer = document.getElementById('extraTableContainer');
+                    if (extraTableContainer) {
+                        extraTableContainer.classList.add('d-none');
+                    }
+                }
+
+                // Show or hide container based on whether there are links
+                if (hasLinks) {
+                    scanLinksContainer.classList.remove('d-none');
+                } else {
+                    scanLinksContainer.classList.add('d-none');
+                }
 
                 console.log(`Successfully loaded links table for ${fileName} (${lang})`);
             } catch (error) {
@@ -2333,10 +2462,12 @@
                 }
             }
 
+            const title = 'ВВОД';
+
             tableContainer.innerHTML = `
                     <div class="card mb-4">
                         <div class="card-header">
-                            <h3 class="mb-0">&nbsp;</h3>
+                            <h3 class="mb-0">${title}</h3>
                         </div>
                         <div class="card-body">
                             <div class="table-responsive">
@@ -2407,6 +2538,7 @@
             const folderList = document.getElementById('folderList');
             const tableContainer = document.getElementById('tableContainer');
             const scanLinksContainer = document.getElementById('scanLinks');
+            const extraTableContainer = document.getElementById('extraTableContainer');
 
             if (!folderList) {
                 console.error('folderList element not found');
@@ -2419,6 +2551,11 @@
             if (scanLinksContainer) {
                 scanLinksContainer.classList.add('d-none');
                 scanLinksContainer.innerHTML = '';
+            }
+            // Скрываем и очищаем дополнительную таблицу при показе папок
+            if (extraTableContainer) {
+                extraTableContainer.classList.add('d-none');
+                extraTableContainer.innerHTML = '';
             }
 
             if (addToHistoryFlag) {
@@ -2472,6 +2609,7 @@
             currentTableId = fileName;
             const folderList = document.getElementById('folderList');
             const tableContainer = document.getElementById('tableContainer');
+            const extraTableContainer = document.getElementById('extraTableContainer');
 
             if (!folderList || !tableContainer) {
                 console.error('Required elements not found');
@@ -2480,6 +2618,20 @@
 
             folderList.innerHTML = '';
             tableContainer.classList.remove('d-none');
+
+            // Управление видимостью дополнительной таблицы
+            if (fileName === 'table1') {
+                // table1 может иметь дополнительную таблицу, показываем контейнер
+                if (extraTableContainer) {
+                    extraTableContainer.classList.remove('d-none');
+                }
+            } else {
+                // Для остальных файлов скрываем и очищаем дополнительную таблицу
+                if (extraTableContainer) {
+                    extraTableContainer.classList.add('d-none');
+                    extraTableContainer.innerHTML = '';
+                }
+            }
 
             if (addToHistoryFlag) {
                 addToHistory({ type: 'table', path: [...currentPath], fileName: fileName });
