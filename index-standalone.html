@@ -682,6 +682,22 @@
                             "description": "В форме прогнозный Баланс для ДЗО данные заносятся на Факт, Оценку и План. Отправка осуществляется методом POST."
                         }
                     ],
+
+                    "bp3-dzo_output": [
+                        {
+                            "field": "/BIC/ZBPACCT",
+                            "description": "Компания ID-сы",
+                            "value_example": "null",
+                            "notes": "null"
+                        },
+                        {
+                            "field": "TXTLG",
+                            "description": "Компания атауы",
+                            "value_example": "null",
+                            "notes": "null"
+                        }
+                    ],
+
                     "bp3-p-pk": [
                         {
                             "field": "ZBPDATYPE",
@@ -736,6 +752,21 @@
                         }
                     ],
 
+                    "bp3-p-pk_output": [
+                        {
+                            "field": "/BIC/ZBPACCT",
+                            "description": "Компания ID-сы",
+                            "value_example": "null",
+                            "notes": "null"
+                        },
+                        {
+                            "field": "TXTLG",
+                            "description": "Компания атауы",
+                            "value_example": "null",
+                            "notes": "null"
+                        }
+                    ],
+
                     "bp3-q-pk": [
                         {
                             "field": "ZBPDATYPE",
@@ -782,6 +813,21 @@
                             "description": "В форме Баланс исполнение данные заносятся только на Оценку. Факт подгружается из витрины КФО. Отправка осуществляется методом POST."
                         }
                     ],
+
+                    "bp3-q-pk_output": [
+                        {
+                            "field": "/BIC/ZBPACCT",
+                            "description": "Компания ID-сы",
+                            "value_example": "null",
+                            "notes": "null"
+                        },
+                        {
+                            "field": "TXTLG",
+                            "description": "Компания атауы",
+                            "value_example": "null",
+                            "notes": "null"
+                        }
+                    ]
                 },
 
                 "BP4_dds": {
@@ -856,6 +902,21 @@
                             "description": "В форме ДДС для ДЗО данные заносятся на Факт, Оценку и План. Отправка осуществляется методом POST."
                         }
                     ],
+
+                    "bp4-dzo_output": [
+                        {
+                            "field": "/BIC/ZBPACCT",
+                            "description": "Компания ID-сы",
+                            "value_example": "null",
+                            "notes": "null"
+                        },
+                        {
+                            "field": "TXTLG",
+                            "description": "Компания атауы",
+                            "value_example": "null",
+                            "notes": "null"
+                        }
+                    ],
                     "bp4-p-pk": [
                         {
                             "field": "ZBPDATYPE",
@@ -908,6 +969,21 @@
                             "description": "В форме прогнозный ДДС данные заносятся на Оценку, План в разбивке по кварталам и Прогноз +4 года. Отправка осуществляется методом POST."
                         }
                     ],
+
+                    "bp4-p-pk_output": [
+                        {
+                            "field": "/BIC/ZBPACCT",
+                            "description": "Компания ID-сы",
+                            "value_example": "null",
+                            "notes": "null"
+                        },
+                        {
+                            "field": "TXTLG",
+                            "description": "Компания атауы",
+                            "value_example": "null",
+                            "notes": "null"
+                        }
+                    ],
                     "bp4-q-pk": [
                         {
                             "field": "ZBPDATYPE",
@@ -957,18 +1033,31 @@
                         }
                     ],
 
+                    "bp4-q-pk_output": [
+                        {
+                            "field": "/BIC/ZBPACCT",
+                            "description": "Компания ID-сы",
+                            "value_example": "null",
+                            "notes": "null"
+                        },
+                        {
+                            "field": "TXTLG",
+                            "description": "Компания атауы",
+                            "value_example": "null",
+                            "notes": "null"
+                        }
+                    ]
+
                 },
                 "Справочник": {
                    "table": [
                         {
                             "field": "/BIC/ZPORTFOM",
-                            "description": "ID компании",
-                            
+                            "description": "ID компании", 
                         },
                         {
                             "field": "TXTLG",
-                            "description": "Название компании",
-                            
+                            "description": "Название компании",                            
                         }
 
                         
@@ -1028,16 +1117,16 @@
                         }
                     ],
 
-                    "table1_table": [
-                       {
+                    "table1_output": [
+                        {
                             "field": "/BIC/ZBPACCT",
-                            "description": "ID компании",
-                            
+                            "description": "Компания ID-сы",
                         },
                         {
                             "field": "TXTLG",
-                            "description": "Название компании",
-                            
+                            "description": "Компания атауы",
+                            "value_example": "null",
+                            "notes": "null"
                         }
 
                         
@@ -1100,6 +1189,21 @@
                         }
                     ],
 
+                    "bp6-m-pk_output": [
+                        {
+                            "field": "/BIC/ZBPACCT",
+                            "description": "Компания ID-сы",
+                            "value_example": "null",
+                            "notes": "null"
+                        },
+                        {
+                            "field": "TXTLG",
+                            "description": "Компания атауы",
+                            "value_example": "null",
+                            "notes": "null"
+                        }
+                    ],
+
                     "bp6-p-pk": [
                         {
                             "field": "ZBPDATYPE",
@@ -1151,6 +1255,21 @@
                             "link2": "https://prdbpc-app.intranet.s-k.kz:8443/zrest_dt_api/BP6_P_PK?sap-client=200",
                             "link3": "https://qasbpcas.intranet.s-k.kz:8443/zrest_dt_api/BP6_P_PK?sap-client=200",
                             "description": "В форме прогнозный Баланс данные заносятся на Оценку, План в разбивке по кварталам и Прогноз +4 года. Отправка осуществляется методом POST."
+                        }
+                    ],
+
+                    "bp6-p-pk_output": [
+                        {
+                            "field": "/BIC/ZBPACCT",
+                            "description": "Компания ID-сы",
+                            "value_example": "null",
+                            "notes": "null"
+                        },
+                        {
+                            "field": "TXTLG",
+                            "description": "Компания атауы",
+                            "value_example": "null",
+                            "notes": "null"
                         }
                     ],
 
@@ -1207,6 +1326,22 @@
                             "description": "В форме ТФР исполнение данные заносятся на Оценку и Факт за период. Отправка осуществляется методом POST."
                         }
                     ],
+
+                    "bp6-q-pk_output": [
+                        {
+                            "field": "/BIC/ZBPACCT",
+                            "description": "Компания ID-сы",
+                            "value_example": "null",
+                            "notes": "null"
+                        },
+                        {
+                            "field": "TXTLG",
+                            "description": "Компания атауы",
+                            "value_example": "null",
+                            "notes": "null"
+                        }
+                    ],
+
                     "bp6-dzo": [
                         {
                             "field": "ZBPDATYPE",
@@ -1265,6 +1400,20 @@
                             "link2": "https://prdbpc-app.intranet.s-k.kz:8443/zrest_dt_api/BP6_DZO?sap-client=200",
                             "link3": "https://qasbpcas.intranet.s-k.kz:8443/zrest_dt_api/BP6_DZO?sap-client=200",
                             "description": "В форме ТФР ежемесячное исполнение данные заносятся на Оценку, Факт и План за период. Отправка осуществляется методом POST."
+                        }
+                    ],
+                    "bp6-dzo_output": [
+                        {
+                            "field": "/BIC/ZBPACCT",
+                            "description": "Компания ID-сы",
+                            "value_example": "null",
+                            "notes": "null"
+                        },
+                        {
+                            "field": "TXTLG",
+                            "description": "Компания атауы",
+                            "value_example": "null",
+                            "notes": "null"
                         }
                     ]
                 }
@@ -1336,6 +1485,21 @@
                             "description": "ДЗО үшін болжамды баланс формасында Факт, Бағалау және Жоспар бойынша деректер енгізіледі. Жіберу POST әдісімен орындалады."
                         }
                     ],
+
+                    "bp3-dzo_output": [
+                        {
+                            "field": "/BIC/ZBPACCT",
+                            "description": "Компания ID-сы",
+                            "value_example": "null",
+                            "notes": "null"
+                        },
+                        {
+                            "field": "TXTLG",
+                            "description": "Компания атауы",
+                            "value_example": "null",
+                            "notes": "null"
+                        }
+                    ], 
                     "bp3-p-pk": [
                         {
                             "field": "ZBPDATYPE",
@@ -1388,6 +1552,23 @@
                             "description": "Болжамды баланс формасында Бағалау, тоқсандар бойынша бөлінген Жоспар және +4 жылға Болжам бойынша деректер енгізіледі. Жіберу POST әдісімен орындалады."
                         }
                     ],
+
+                    "bp3-p-pk_output": [
+                        {
+                            "field": "/BIC/ZBPACCT",
+                            "description": "Компания ID-сы",
+                            "value_example": "null",
+                            "notes": "null"
+                        },
+                        {
+                            "field": "TXTLG",
+                            "description": "Компания атауы",
+                            "value_example": "null",
+                            "notes": "null"
+                        }
+                    ], 
+
+
                     "bp3-q-pk": [
                         {
                             "field": "ZBPDATYPE",
@@ -1433,7 +1614,23 @@
                             "link3": "https://qasbpcas.intranet.s-k.kz:8443/zrest_dt_api/BP3_Q_PK?sap-client=200",
                             "description": "Баланс орындау формасында тек Бағалау бойынша деректер енгізіледі. Факт КФО витринасынан жүктеледі. Жіберу POST әдісімен орындалады."
                         }
-                    ]
+                    ], 
+
+                    "bp3-q-pk_output": [
+                        {
+                            "field": "/BIC/ZBPACCT",
+                            "description": "Компания ID-сы",
+                            "value_example": "null",
+                            "notes": "null"
+                        },
+                        {
+                            "field": "TXTLG",
+                            "description": "Компания атауы",
+                            "value_example": "null",
+                            "notes": "null"
+                        }
+                    ], 
+                    
                 },
                 "BP4_dds": {
                     "bp4-dzo": [
@@ -1506,6 +1703,22 @@
                             "description": "ДЗО үшін ААҚ формасында Факт, Бағалау және Жоспар бойынша деректер енгізіледі. Жіберу POST әдісімен орындалады."
                         }
                     ],
+
+                    "bp4-dzo_output": [
+                        {
+                            "field": "/BIC/ZBPACCT",
+                            "description": "Компания ID-сы",
+                            "value_example": "null",
+                            "notes": "null"
+                        },
+                        {
+                            "field": "TXTLG",
+                            "description": "Компания атауы",
+                            "value_example": "null",
+                            "notes": "null"
+                        }
+                    ], 
+
                     "bp4-p-pk": [
                         {
                             "field": "ZBPDATYPE",
@@ -1558,6 +1771,22 @@
                             "description": "Болжамды ААҚ формасында Бағалау, тоқсандар бойынша бөлінген Жоспар және +4 жылға Болжам бойынша деректер енгізіледі. Жіберу POST әдісімен орындалады."
                         }
                     ],
+
+                    "bp4-p-pk_output": [
+                        {
+                            "field": "/BIC/ZBPACCT",
+                            "description": "Компания ID-сы",
+                            "value_example": "null",
+                            "notes": "null"
+                        },
+                        {
+                            "field": "TXTLG",
+                            "description": "Компания атауы",
+                            "value_example": "null",
+                            "notes": "null"
+                        }
+                    ], 
+
                     "bp4-q-pk": [
                         {
                             "field": "ZBPDATYPE",
@@ -1603,7 +1832,23 @@
                             "link3": "https://qasbpcas.intranet.s-k.kz:8443/zrest_dt_api/BP4_Q_PK?sap-client=200",
                             "description": "Шеңберлік ААҚ орындау формасында Бағалау бойынша деректер енгізіледі. Жіберу POST әдісімен орындалады."
                         }
-                    ]
+                    ], 
+
+                    "bp4-q-pk_output": [
+                        {
+                            "field": "/BIC/ZBPACCT",
+                            "description": "Компания ID-сы",
+                            "value_example": "null",
+                            "notes": "null"
+                        },
+                        {
+                            "field": "TXTLG",
+                            "description": "Компания атауы",
+                            "value_example": "null",
+                            "notes": "null"
+                        }
+                    ], 
+
                 },
                 "Справочник": {
                    "table": [
@@ -1664,14 +1909,18 @@
                         }
                     ],
 
-                    "table1_table": [
+                    "table1_output": [
                         {
                             "field": "/BIC/ZBPACCT",
                             "description": "Компания ID-сы",
+                            "value_example": "null",
+                            "notes": "null"
                         },
                         {
                             "field": "TXTLG",
                             "description": "Компания атауы",
+                            "value_example": "null",
+                            "notes": "null"
                         }
                     ]
                 },
@@ -1729,6 +1978,22 @@
                             "description": "ТФР орындау формасында кезең бойынша Бағалау және Факт бойынша деректер енгізіледі. Жіберу POST әдісімен орындалады."
                         }
                     ],
+
+                    "bp6-m-pk_output": [
+                        {
+                            "field": "/BIC/ZBPACCT",
+                            "description": "Компания ID-сы",
+                            "value_example": "null",
+                            "notes": "null"
+                        },
+                        {
+                            "field": "TXTLG",
+                            "description": "Компания атауы",
+                            "value_example": "null",
+                            "notes": "null"
+                        }
+                    ], 
+
                     "bp6-p-pk": [
                         {
                             "field": "ZBPDATYPE",
@@ -1781,6 +2046,22 @@
                             "description": "Болжамды баланс формасында Бағалау, тоқсандар бойынша бөлінген Жоспар және +4 жылға Болжам бойынша деректер енгізіледі. Жіберу POST әдісімен орындалады."
                         }
                     ],
+
+                    "bp6-p-pk_output": [
+                        {
+                            "field": "/BIC/ZBPACCT",
+                            "description": "Компания ID-сы",
+                            "value_example": "null",
+                            "notes": "null"
+                        },
+                        {
+                            "field": "TXTLG",
+                            "description": "Компания атауы",
+                            "value_example": "null",
+                            "notes": "null"
+                        }
+                    ], 
+
                     "bp6-q-pk": [
                         {
                             "field": "ZBPDATYPE",
@@ -1833,6 +2114,22 @@
                             "description": "ТФР орындау формасында кезең бойынша Бағалау және Факт бойынша деректер енгізіледі. Жіберу POST әдісімен орындалады."
                         }
                     ],
+
+                    "bp6-q-pk_output": [
+                        {
+                            "field": "/BIC/ZBPACCT",
+                            "description": "Компания ID-сы",
+                            "value_example": "null",
+                            "notes": "null"
+                        },
+                        {
+                            "field": "TXTLG",
+                            "description": "Компания атауы",
+                            "value_example": "null",
+                            "notes": "null"
+                        }
+                    ], 
+
                     "bp6-dzo": [
                         {
                             "field": "ZBPDATYPE",
@@ -1890,7 +2187,22 @@
                             "link3": "https://qasbpcas.intranet.s-k.kz:8443/zrest_dt_api/BP6_DZO?sap-client=200",
                             "description": "ТФР айлық орындау формасында кезең бойынша Бағалау, Факт және Жоспар бойынша деректер енгізіледі. Жіберу POST әдісімен орындалады."
                         }
-                    ]
+                    ],
+
+                    "bp6-dzo_output": [
+                        {
+                            "field": "/BIC/ZBPACCT",
+                            "description": "Компания ID-сы",
+                            "value_example": "null",
+                            "notes": "null"
+                        },
+                        {
+                            "field": "TXTLG",
+                            "description": "Компания атауы",
+                            "value_example": "null",
+                            "notes": "null"
+                        }
+                    ], 
                 }
             }
         };
@@ -2432,35 +2744,21 @@
 
                 let hasLinks = false;
 
-                if (fileName === 'table1') {
-                    // For table1, load table1_link as links table
-                    const linkData1 = window.EMBEDDED_DATA?.[lang]?.[mainFolder]?.['table1_link'];
-                    if (renderLinksTable(linkData1, scanLinksContainer)) {
-                        hasLinks = true;
-                    }
+                // Load links for the current fileName
+                const linkData = window.EMBEDDED_DATA?.[lang]?.[mainFolder]?.[fileName + '_link'];
+                if (renderLinksTable(linkData, scanLinksContainer)) {
+                    hasLinks = true;
+                }
 
-                    // For table1, load table1_table as extra data table
-                    const extraTableContainer = document.getElementById('extraTableContainer');
-                    if (extraTableContainer) {
-                        extraTableContainer.innerHTML = '';
-                        const tableData = window.EMBEDDED_DATA?.[lang]?.[mainFolder]?.['table1_table'];
-                        if (tableData && Array.isArray(tableData) && tableData.length > 0) {
-                            renderDataTable(tableData, extraTableContainer, 'ВЫВОД');
-                            extraTableContainer.classList.remove('d-none');
-                        } else {
-                            extraTableContainer.classList.add('d-none');
-                        }
-                    }
-                } else {
-                    // For other files, load as before
-                    const linkData = window.EMBEDDED_DATA?.[lang]?.[mainFolder]?.[fileName + '_link'];
-                    if (renderLinksTable(linkData, scanLinksContainer)) {
-                        hasLinks = true;
-                    }
-
-                    // Hide extra table container for non-table1 files
-                    const extraTableContainer = document.getElementById('extraTableContainer');
-                    if (extraTableContainer) {
+                // Load output table for the current fileName
+                const extraTableContainer = document.getElementById('extraTableContainer');
+                if (extraTableContainer) {
+                    extraTableContainer.innerHTML = '';
+                    const outputData = window.EMBEDDED_DATA?.[lang]?.[mainFolder]?.[fileName + '_output'];
+                    if (outputData && Array.isArray(outputData) && outputData.length > 0) {
+                        renderDataTable(outputData, extraTableContainer, 'ВЫВОД');
+                        extraTableContainer.classList.remove('d-none');
+                    } else {
                         extraTableContainer.classList.add('d-none');
                     }
                 }
@@ -2679,19 +2977,7 @@
             folderList.innerHTML = '';
             tableContainer.classList.remove('d-none');
 
-            // Управление видимостью дополнительной таблицы
-            if (fileName === 'table1') {
-                // table1 может иметь дополнительную таблицу, показываем контейнер
-                if (extraTableContainer) {
-                    extraTableContainer.classList.remove('d-none');
-                }
-            } else {
-                // Для остальных файлов скрываем и очищаем дополнительную таблицу
-                if (extraTableContainer) {
-                    extraTableContainer.classList.add('d-none');
-                    extraTableContainer.innerHTML = '';
-                }
-            }
+            // Управление видимостью дополнительной таблицы - теперь универсально обрабатывается в loadLinksTable
 
             if (addToHistoryFlag) {
                 addToHistory({ type: 'table', path: [...currentPath], fileName: fileName });
